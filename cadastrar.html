@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLB CursoNet</title>
+    <link rel="stylesheet" href="cadastrar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="barraTitulo">
+        <div id="titulo">Certificação em Liguagens de Bots</div>
+        <div id="espaco"></div>
+        <img src="Logo CLB.jpeg" alt="Logo da organização CLB">
+    </div>
+    
+    <div class="lado">
+    <div class="cadastrar" id="quadrado">
+
+        <div>
+            <h1>Cadastrar</h1>
+        </div>
+        <div id="msgDeErro"></div>
+        <div id="msgSucesso"></div>
+
+        <div id="envolta">
+        <form action="https://formsubmit.co/devcursoclb@gmail.com" method="post">
+        <div class="espacoflutuante">
+            <input type="text" id="nome" placeholder="" required>
+            <label for="nome" id="labelNome"> Nome Completo </label>
+        </div>
+        <div class="espacoflutuante">
+            <input type="text" id="email" placeholder="" required>
+            <label for="email" id="labelEmail"> Email </label>
+        </div>
+        <div class="espacoflutuante">
+            <input type="text" id="usuario" placeholder="" required>
+            <label for="usuario" id="labelUsuario"> Usuário </label>
+        </div>
+        <div class="espacoflutuante">
+            <input type="password" id="senha" placeholder="" required>
+            <label for="senha" id="labelSenha"> Senha </label>
+            <i class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+        <div class="espacoflutuante">
+            <input type="password" id="confirmarSenha" placeholder="" required>
+            <label for="senha" id="labelConfir"> Confirmar Senha </label>
+            <i id="confirme" class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+        </div>
+
+        <div>
+            <button type="submit" onclick="cadastrar()"> Cadastrar </button>
+        </div>
+
+        <input type="hidden" name="_subject" value="Novo Cadastro!">
+        <input type="text" name="_honey" style="display: none;">
+        <input type="hidden" name="_captcha" value="false">
+
+        </form>
+    </div>
+    <div>
+
+
+</body>
+<script src="cadastrar.js"> </script>
+</html>

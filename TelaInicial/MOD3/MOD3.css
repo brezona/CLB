@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+  background-color: rgb(161, 4, 10);
+}
+
+#titulo {
+  background-color: rgb(125, 10, 15);
+  width: 160px;
+  border-radius: 60px;
+  font-size: 4.5vh;
+  padding: 10px 30px;
+  position: absolute;
+  left: 8%;
+  top: 6%;
+}
+
+#envolta {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vw;
+  
+    padding: 30vh 5vw 100px;
+}
+  
+.caixas {
+  border: solid 0.4vh black;
+  background-color: rgb(170, 73, 73);
+  width: 60vw;
+  height: 20vh;
+}
+.caixas h3 {
+  padding: 4vh 0 3vh 3vw;
+  font-family: "Orbitron", sans-serif;
+  color: rgb(125, 10, 15);
+  font-weight: 400;
+  font-size: 3vh;
+}
+.caixas button {
+  border-radius: 60px;
+  flex-shrink: 0;
+  
+  position: absolute;
+  left: 60vw;
+
+  border: solid 0.1vh rgb(87, 33, 33);
+  font-size: 2vh;
+}

@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+:root {
+    --tela: black;
+    --botão: url(./sol.svg);
+    --fundo: rgb(255, 255, 255, 0.1);
+    --borda: rgb(255, 255, 255, 0.5);
+    --texto: white;
+}
+.claro {
+    --tela: white;
+    --botão: url(./lua.svg);
+    --fundo: rgb(0, 0, 0, 0.05);
+    --borda: rgb(0, 0, 0, 0.5);
+    --texto: black;
+}
+
+body {
+    background-color: var(--tela);
+}
+
+#texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15vh 0 2vh;
+    font-size: 20px;
+    color: var(--texto);
+}
+#botão {
+    position: relative;
+    width: 66px;
+    margin: 4px auto;
+}
+#botão button {
+    height: 32px;
+    width: 32px;
+    background: white var(--botão) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+  
+    position: absolute;
+    z-index: 1;
+    left: 0;
+  
+    top: 50%;
+    transform: translateY(-50%);
+  
+    animation: deslizamentoVolta 0.4s;
+}
+.claro #botão button {
+    animation: deslizamento 0.4s forwards;
+}
+  
+#botão button:hover {
+    outline: 8px solid var(--fundo);
+}
+#botão span {
+    display: block;
+    height: 24px;
+    width: 64px;
+    border-radius: 9999px;
+  
+    background: var(--fundo);
+    border: 1px solid var(--borda);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+#centro {
+    display: flex;
+    gap: 10vh;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: 10vh;
+}
+#msg {
+    display: flex;
+    flex-direction: column;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 10px;
+    width: 60vw;
+}
+
+#link {
+    display: flex;
+    gap: 1vh;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #98cfde;
+    border-radius: 10px;
+    padding: 3vh 3vw;
+    color: white;
+}
+#link a {
+    text-decoration: none;
+    color: #387c8f;
+}
+
+
+@keyframes deslizamento {
+    from {
+      left: 0;   
+    }
+    to {
+      left: 52%;
+    }
+  }
+  @keyframes deslizamentoVolta {
+   from {
+    left: 52%;
+   } 
+   to {
+    left: 0;
+   }
+}

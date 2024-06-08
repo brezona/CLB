@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: grey;
+      
+    font-family: sans-serif;
+    color: white;
+  }
+  
+  #barraTitulo {
+    background-color: rgb(95, 95, 95);
+    margin-top: 0;
+    height: 100%;
+    padding: 2.5vh 0 2.5vh 4vh;
+    display: flex;
+    align-items: center;
+  }
+  #titulo {
+    font-size: 3.5vh;
+    font-weight: 600;
+  }
+  #espaco {
+    padding: 10px 10px;
+    border: 1px solid rgb(95, 95, 95);
+  }
+  #barraTitulo img {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  
+    position: absolute;
+    left: 85%;
+  }
+
+  .login {
+    display: flex;
+    align-items: center;
+  
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  
+  #quadrado {   
+    background-color: rgb(53, 53, 179);
+    padding: 6vh 3vw;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px;
+  }
+  
+  .lado {
+    display: flex;
+    justify-content: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  #envolta {
+    padding-top: 15px;
+  }
+  .espacoflutuante input {
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 3px solid rgb(136, 131, 131);
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+  }
+  .espacoflutuante {
+    position: relative;
+    padding: 13px;
+  }
+  .espacoflutuante input:focus {
+    border-bottom: 2px solid cadetblue;
+  }
+  .espacoflutuante label {
+    pointer-events: none; /*não podemos fazer nada com as labels; são travadas; ex: não são clicáveis*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+  }
+  .espacoflutuante input:focus + label,
+  .espacoflutuante input:valid + label {
+    font-size: 13px;
+    margin-top: 0;
+  }
+
+/* confuguração do olhinho */
+/*a classe já vem do site*/
+.fa-eye {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  cursor: pointer;
+  color: rgb(52, 50, 50);
+}
+
+  
+  button {
+    background-color: rgb(142, 142, 246);
+    border-color: rgb (136, 131, 131);
+    padding: 7px;
+    font-weight: bold; /*"bold" deixa o texto em negrito*/
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer; /*quando passa o mouse no botão, aparece uma mãozinha*/
+  }
+  button:hover {
+    background-color: rgb(208, 208, 229);
+    transition: all .4s ease-out;
+  }
+  button a {
+    text-decoration: none;
+    color: black;
+  }
+  p a {
+    text-decoration: none;
+    color: rgb(96, 96, 255);
+    font-weight: bold;
+  }
+  
+hr {
+  padding: 1px 130px;
+  border: 25px solid rgb(53, 53, 179);
+  background-color: rgb(214, 206, 206);
+}
+
+
+
+  @media(min-width: 410px) {
+    #barraTitulo img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  @media(min-width: 510px) {
+    #barraTitulo img {
+      width: 18px;
+      height: 18px;
+    }
+    #barraTitulo {
+      padding: 1vh 0 1vh 4vh;
+  }
+  }
+  @media(min-width: 610px) {
+    #barraTitulo img {
+      width: 24px;
+      height: 24px;
+    }
+    #barraTitulo {
+      padding: 1.5vh 0 1.5vh 4vh;
+  }
+  }
+  @media(min-width: 740px) {
+    #barraTitulo img {
+      width: 27px;
+      height: 27px;
+    }
+    #barraTitulo {
+      padding: 1.5vh 0 1.5vh 4vh;
+  }
+  }
+  @media(min-width: 850px) {
+    #barraTitulo img {
+      width: 32px;
+      height: 32px;
+    }
+    #barraTitulo {
+      padding: 1.8vh 0 1.8vh 4vh;
+  }
+  }
+  @media(min-width: 1000px) {
+    #barraTitulo img {
+      width: 38px;
+      height: 38px;
+    }
+    #barraTitulo {
+      padding: 2.2vh 0 2.2vh 4vh;
+  }
+  }
+  @media(min-width: 1200px) {
+    #barraTitulo img {
+      width: 42px;
+      height: 42px;
+    }
+    #barraTitulo {
+      padding: 2.2vh 0 2.2vh 4vh;
+  }
+  }
+  
+  @media(min-width: 1400px) {
+    #barraTitulo img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  @media(min-width: 1500px) {
+    #barraTitulo img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  @media(min-width: 1700px) {
+    #barraTitulo img {
+      width: 55px;
+      height: 55px;
+    }
+  }
+  
+  @media(min-width: 2000px) {
+    #barraTitulo img {
+    width: 70px;
+    height: 70px;
+  }
+  }
+  
+  @media(min-width: 2500px) {
+    #barraTitulo img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  
+  @media(min-width: 3600px) {
+    #barraTitulo img {
+      width: 135px;
+      height: 135px;
+    }
+  }
+  
+  @media(min-width: 4700px) {
+    #barraTitulo img {
+      width: 180px;
+      height: 180px;
+    }
+  }
+
+  #msgDeErro {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+  }    

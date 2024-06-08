@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-family: sans-serif;
+  color: black;
+  background-image: url(imagens/fundo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+#barraTitulo {
+  background-color: rgb(255, 189, 48);
+  margin-top: 0;
+  height: 100%;
+  padding: 2.5vh 0 2.5vh 4vh;
+
+  display: flex;
+  align-items: center;
+}
+#titulo {
+  font-size: 3.5vh;
+  font-weight: 600;
+}
+#espaco {
+  padding: 10px 10px;
+  border: 1px solid rgb(255, 189, 48);
+}
+#barraTitulo img {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+  position: absolute;
+  left: 85%;
+  flex-shrink: 0; /*se a página ficar muito apertada, o círculo continuará redondo*/
+}
+
+#quadrado {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+
+  padding: 30vh 5vw 100px;
+}
+
+.caixas {
+  border: solid 0.4vh black;
+  width: 60vw;
+  height: 22vh;
+}
+.caixas h3 {
+  padding: 3vh 0 6vh 2vw;
+  font-family: "Orbitron", sans-serif;
+  color: rgb(149, 58, 58);
+  font-weight: 400;
+  font-size: 3vh;
+}
+
+#amarelo {
+  background-color: rgb(254, 218, 76);
+}
+
+.caixas button {
+  border-radius: 60px;
+  flex-shrink: 0;/*se a página ficar muito apertada, o círculo continuará redondo*/
+  position: absolute;
+  border: solid 0.1vh rgb(87, 33, 33);
+  font-size: 2vh;
+  padding: 5px;
+}
+
+.caixas button a {
+  text-decoration: none;
+}
+
+#mod1 {
+  left: 15.5vw;
+} 
+#mod2 {
+  left: 34vw;
+}
+#mod3 {
+  left: 52.5vw;
+}
+#mod4 {
+  left: 71vw;
+}
+#fim {
+  left: 89vw;
+}
+
+
+/* @media(min-width: 310px) {
+  #barraTitulo img {
+    width: 13px;
+    height: 13px;
+  }
+} */
+@media(min-width: 410px) {
+  #barraTitulo img {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media(min-width: 510px) {
+  #barraTitulo img {
+    width: 18px;
+    height: 18px;
+  }
+  #barraTitulo {
+    padding: 1vh 0 1vh 4vh;
+}
+}
+@media(min-width: 610px) {
+  #barraTitulo img {
+    width: 24px;
+    height: 24px;
+  }
+  #barraTitulo {
+    padding: 1.5vh 0 1.5vh 4vh;
+}
+}
+@media(min-width: 740px) {
+  #barraTitulo img {
+    width: 27px;
+    height: 27px;
+  }
+  #barraTitulo {
+    padding: 1.5vh 0 1.5vh 4vh;
+}
+}
+@media(min-width: 850px) {
+  #barraTitulo img {
+    width: 32px;
+    height: 32px;
+  }
+  #barraTitulo {
+    padding: 1.8vh 0 1.8vh 4vh;
+}
+}
+@media(min-width: 1000px) {
+  #barraTitulo img {
+    width: 38px;
+    height: 38px;
+  }
+  #barraTitulo {
+    padding: 2.2vh 0 2.2vh 4vh;
+}
+}
+@media(min-width: 1200px) {
+  #barraTitulo img {
+    width: 42px;
+    height: 42px;
+  }
+  #barraTitulo {
+    padding: 2.2vh 0 2.2vh 4vh;
+}
+}
+
+
+@media(min-width: 1400px) {
+  #barraTitulo img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media(min-width: 1500px) {
+  #barraTitulo img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media(min-width: 1700px) {
+  #barraTitulo img {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media(min-width: 2000px) {
+  #quadrado {
+  flex-direction: column;
+}
+#barraTitulo img {
+  width: 70px;
+  height: 70px;
+}
+.caixas {
+  height: 20vh;
+}
+.caixas h3 {
+  padding: 4vh 0 3vh 3vw;
+}
+ #mod1 {
+  left: 60vw;
+} 
+ #mod2 {
+  left: 60vw;
+}
+ #mod3 {
+  left: 60vw;
+}
+ #mod4 {
+  left: 60vw;
+}
+ #fim {
+  left: 60vw;
+ }
+}
+
+@media(min-width: 2500px) {
+  #barraTitulo img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media(min-width: 3600px) {
+  #barraTitulo img {
+    width: 135px;
+    height: 135px;
+  }
+}
+
+@media(min-width: 4700px) {
+  #barraTitulo img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+
+@media(max-width: 850px) {
+  #quadrado {
+  flex-direction: column;
+}
+.caixas {
+  height: 20vh;
+}
+.caixas h3 {
+  padding: 4vh 0 3vh 3vw;
+}
+ #mod1 {
+  left: 60vw;
+} 
+ #mod2 {
+  left: 60vw;
+}
+ #mod3 {
+  left: 60vw;
+}
+ #mod4 {
+  left: 60vw;
+}
+ #fim {
+  left: 60vw;
+ }
+}
+
+/* #certo {
+  display: flex;
+  align-items: center;
+}
+#teste {
+  padding: 10px;
+  border-left: 1300px solid red;
+} */
