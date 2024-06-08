@@ -53,7 +53,7 @@ email.addEventListener('keyup', ()=> {
         labelEmail.setAttribute('style', 'color: red')
         email.setAttribute('style', 'border-color: red')
 
-        labelEmail.innerHTML = '*Coloque o @'
+        labelEmail.innerHTML = '*Coloque 3 digitos ou mais'
         validEmail = false
     }
     else {
