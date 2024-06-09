@@ -27,8 +27,7 @@
   }
   #barraTitulo img {
     display: flex;
-    width: 45px;
-    height: 45px;
+    height: 7vh;
     border-radius: 50%;
   
     position: absolute;
