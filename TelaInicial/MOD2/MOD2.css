@@ -4,6 +4,8 @@
 }
 body {
   background-image: url(./img2/fundoAzul.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #titulo {

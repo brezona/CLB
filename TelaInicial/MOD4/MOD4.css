@@ -4,6 +4,8 @@
 }
 body {
 background-image: url(./img4/fundoRoxo.jpg);
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 #titulo {
