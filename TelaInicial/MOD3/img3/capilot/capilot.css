@@ -87,6 +87,9 @@ img {
 #um {
     padding-top: 15vh;
 }
+#gap {
+    padding-top: 10vh;
+}
 
 @keyframes deslizamento {
     from {
