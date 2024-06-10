@@ -50,4 +50,10 @@ left: 60vw;
 
 border: solid 0.1vh rgb(175, 27, 155);
 font-size: 2vh;
+padding: 0.7vh;
+}
+
+.caixas button a {
+  text-decoration: none;
+  color: black;
 }
