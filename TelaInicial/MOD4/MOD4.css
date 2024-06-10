@@ -37,7 +37,7 @@ height: 20vh;
 .caixas h3 {
 padding: 4vh 0 3vh 3vw;
 font-family: "Orbitron", sans-serif;
-color: rgb(125, 10, 15);
+color: rgb(236, 125, 222);
 font-weight: 400;
 font-size: 3vh;
 }
@@ -48,6 +48,6 @@ flex-shrink: 0;
 position: absolute;
 left: 60vw;
 
-border: solid 0.1vh rgb(87, 33, 33);
+border: solid 0.1vh rgb(236, 125, 222);
 font-size: 2vh;
 }
