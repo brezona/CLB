@@ -29,8 +29,8 @@ top: 6%;
 }
 
 .caixas {
-border: solid 0.4vh black;
-background-color: rgb(170, 73, 73);
+border: solid 0.4vh white;
+background-color: rgb(197, 77, 182);
 width: 60vw;
 height: 20vh;
 }
