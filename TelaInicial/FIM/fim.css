@@ -5,14 +5,14 @@
 }
 :root {
     --tela: black;
-    --botão: url(./sol.svg);
+    --botão: url(./img/sol.svg);
     --fundo: rgb(255, 255, 255, 0.1);
     --borda: rgb(255, 255, 255, 0.5);
     --texto: white;
 }
 .claro {
     --tela: white;
-    --botão: url(./lua.svg);
+    --botão: url(./img/lua.svg);
     --fundo: rgb(0, 0, 0, 0.05);
     --borda: rgb(0, 0, 0, 0.5);
     --texto: black;
