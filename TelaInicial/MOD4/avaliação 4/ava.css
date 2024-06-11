@@ -81,8 +81,8 @@ body {
 #msg {
     display: flex;
     flex-direction: column;
-    color: #ff0000;
-    background-color: #ffbbbb;
+    color: black;
+    background-color: gray;
     padding: 10px;
     border-radius: 10px;
     width: 60vw;
