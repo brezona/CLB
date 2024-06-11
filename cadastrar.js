@@ -137,7 +137,7 @@ function cadastrar() {
 
 
         msgSucesso.setAttribute('style', 'display: block')
-        msgSucesso.innerHTML = '<strong> Suas informações serão verificadas, e poderá demorar alguns minutos até horas <strong>'
+        msgSucesso.innerHTML = '<strong> Suas informações foram salvas neste aparelho <strong>'
         msgDeErro.setAttribute('style', 'display: none')
 
     
