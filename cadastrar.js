@@ -49,18 +49,17 @@ nome.addEventListener('keyup', ()=> {
     validNome = true
 })
 email.addEventListener('keyup', ()=> {
-    if(email.value.length < 2) {
+
+    let regexEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(!regexEmail.test(email.value)) {
         labelEmail.setAttribute('style', 'color: red')
         email.setAttribute('style', 'border-color: red')
 
-        labelEmail.innerHTML = '*Coloque 3 digitos ou mais'
         validEmail = false
     }
     else {
         labelEmail.setAttribute('style', 'color: #00bb00')
         email.setAttribute('style', 'border-color: #00bb00')
-
-        labelEmail.innerHTML = 'Email'
     }
     validEmail = true
 })
