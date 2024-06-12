@@ -26,8 +26,6 @@ let validConfirmarSenha = false
 let msgDeErro = document.querySelector('#msgDeErro')
 let msgSucesso = document.querySelector('#msgSucesso')
 
-const servidor = 'devcursoclb@gmail.com';
-
 
 // "keyup" quer dizer que quando o clique do mouse sair de "nome" vai executar a função
 nome.addEventListener('keyup', ()=> {

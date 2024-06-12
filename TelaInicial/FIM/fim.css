@@ -103,4 +103,105 @@ img {
    to {
     left: 0;
    }
+  }
+
+
+  .certificado {
+    display: flex;
+    align-items: center;
+  
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  #quadrado {   
+    background-color: rgb(53, 53, 179);
+    padding: 6vh 8vw;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px;
+  }
+  .lado {
+    display: flex;
+    justify-content: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  #envolta {
+    padding-top: 15px;
+  }
+
+  .espacoflutuante input {
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 3px solid rgb(136, 131, 131);
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+  }
+  .espacoflutuante {
+    position: relative;
+    padding: 13px;
+  }
+  .espacoflutuante input:focus {
+    border-bottom: 2px solid cadetblue;
+  }
+  .espacoflutuante label {
+    pointer-events: none; /*não podemos fazer nada com as labels; são travadas; ex: não são clicáveis*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+  }
+  .espacoflutuante input:focus + label,
+  .espacoflutuante input:valid + label
+    {
+    font-size: 13px;
+    margin-top: 0;
+  }
+
+  .fa-eye {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    cursor: pointer;
+    color: rgb(52, 50, 50);
+  }
+  
+  button {
+    background-color: rgb(142, 142, 246);
+    border-color: rgb (136, 131, 131);
+    padding: 7px;
+    font-weight: bold; /*"bold" deixa o texto em negrito*/
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer; /*quando passa o mouse no botão, aparece uma mãozinha*/
+  }
+  button:hover {
+    background-color: rgb(208, 208, 229);
+    transition: all .4s ease-out;
+  }
+
+#msgDeErro {
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
 }
+#msgSucesso {
+  text-align: center;
+  color: #00bb00;
+  background-color: #bbffbe;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}    
