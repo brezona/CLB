@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="claro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cert.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CLB CursoNet</title>
+</head>
+<body>
+
+    <div id="texto"> Mudar cor de fundo </div>
+    <div id=botão onclick="mudar()">
+        <button></button>
+        <span></span>
+    </div>
+    
+    <div class="lado">
+    <div class="certificado" id="quadrado">
+
+        <div>
+            <h1>Pedir Certificado</h1>
+        </div>
+        <div id="msgDeErro"></div>
+        <div id="msgSucesso"></div>
+
+        <div id="envolta">
+        <form action="https://formsubmit.co/395f4213caee8602768ae100d6705585" method="post">
+        <div class="espacoflutuante">
+            <input type="text" name="name" id="nome" placeholder="" required>
+            <label for="nome" id="labelNome"> Nome Completo </label>
+        </div>
+        <div class="espacoflutuante">
+            <input type="email" name="email" id="email" placeholder="" required>
+            <label for="email" id="labelEmail"> Email </label>
+        </div>
+        <div class="espacoflutuante">
+            <input type="text" name="whatsapp" id="whats" placeholder="" required>
+            <label for="whatsapp" id="labelWhats"> Whatsapp (Somente números) </label>
+        </div>
+        <div class="espacoflutuante">
+            <input type="text" name="user" id="usuario" placeholder="" required>
+            <label for="usuario" id="labelUsuario"> Usuário </label>
+        </div>
+        <div class="espacoflutuante">
+            <input type="password" name="password" id="senha" placeholder="" required>
+            <label for="senha" id="labelSenha"> Senha </label>
+            <i class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+        </div>
+
+        <div>
+            <button type="submit" onclick="certificado()" id="pedir"> Pedir </button>
+        </div>
+
+        <input type="hidden" name="_subject" value="Quero meu Certificado!">
+        <input type="text" name="_honey" style="display: none;">
+        <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    </div>
+
+    <script src="cert.js"> </script>
+</body>
+</html>
