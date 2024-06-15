@@ -80,22 +80,22 @@ body {
 }
 
 #mod1 {
-  left: 15.5vw;
+  left: 13.5vw;
 } 
 #mod2 {
-  left: 34vw;
+  left: 28.7vw;
 }
 #mod3 {
-  left: 52.5vw;
+  left: 44vw;
 }
 #mod4 {
-  left: 71vw;
+  left: 59.5vw;
 }
 #fim {
-  left: 89vw;
+  left: 74.7vw;
 }
 #cert {
-  left: 92vw;
+  left: 90vw;
 }
 
 @media(max-width: 1200px) {
