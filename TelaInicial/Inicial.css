@@ -94,9 +94,11 @@ body {
 #fim {
   left: 89vw;
 }
+#cert {
+  left: 92vw;
+}
 
-
-@media(max-width: 950px) {
+@media(max-width: 1200px) {
   #quadrado {
   flex-direction: column;
 }
@@ -119,6 +121,9 @@ body {
   left: 60vw;
 }
  #fim {
+  left: 60vw;
+ }
+ #cert {
   left: 60vw;
  }
 }
