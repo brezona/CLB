@@ -107,6 +107,7 @@ body {
   .lado {
     display: flex;
     justify-content: center;
+    padding-top: 20vh;
   }
 
   h1 {
